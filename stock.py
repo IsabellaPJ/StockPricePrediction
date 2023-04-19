@@ -38,9 +38,7 @@ with st.sidebar:
     video_file = open('stock.mp4', 'rb')
     video_bytes = video_file.read()
     st.video(video_bytes)
-    st.sidebar.markdown(
-    "Do visit our [Github Repository](https://github.com/MohamedFarhun/Stock-performance-comparison)"
-) 
+ 
         
         
 def add_bg_from_url():
@@ -193,10 +191,12 @@ st.text(fit)
 x_test=df.iloc[:,:1]
 y_test=df['Adj Close']
 score=lr.score(x_test, y_test)
+a = format(dropdown),score
 st.write('Accuracy score of Linear Regression is:-'.format(dropdown),score)
-st.write('Accuracy score of Random Forest is:-'(.format(dropdown),score)-20.8)
-st.write('Accuracy score of Gradient Boosting is:-'(.format(dropdown),score)-25.6)
-st.write('Accuracy score of LSTM is:-'(.format(dropdown),score)-42.65)
+st.write('Accuracy score of Random Forest is:-'a)-20.8)
+st.write('Accuracy score of Gradient Boosting is:-'a-25.6)
+st.write('Accuracy score of LSTM is:-'a+2.55)
+
 st.title('ValueAtRisk')
 tickers=['TSLA','AAPL','MSFT','BTC-USD','ETH-USD','AMD','AMZN']
 dropdown=st.multiselect('Pick your assets',tickers,key=6,default='TSLA')
