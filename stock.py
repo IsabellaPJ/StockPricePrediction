@@ -192,13 +192,8 @@ x_test=df.iloc[:,:1]
 y_test=df['Adj Close']
 score=lr.score(x_test, y_test)
 a = format(dropdown),score
-b = a-20.8
-c = a-25.6
-d = a+2.55
 st.write('Accuracy score of Linear Regression is:-'.format(dropdown),score)
-st.write('Accuracy score of Random Forest is:-'.b)
-st.write('Accuracy score of Gradient Boosting is:-'.c)
-st.write('Accuracy score of LSTM is:-'.d)
+
 
 st.title('ValueAtRisk')
 tickers=['TSLA','AAPL','MSFT','BTC-USD','ETH-USD','AMD','AMZN']
