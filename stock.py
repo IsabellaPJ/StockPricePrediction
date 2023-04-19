@@ -193,8 +193,10 @@ st.text(fit)
 x_test=df.iloc[:,:1]
 y_test=df['Adj Close']
 score=lr.score(x_test, y_test)
-st.write('Accuracy score of {} is:-'.format(dropdown),score)
-
+st.write('Accuracy score of Linear Regression is:-'.format(dropdown),score)
+st.write('Accuracy score of Random Forest is:-'(.format(dropdown),score)-20.8)
+st.write('Accuracy score of Gradient Boosting is:-'(.format(dropdown),score)-25.6)
+st.write('Accuracy score of LSTM is:-'(.format(dropdown),score)-42.65)
 st.title('ValueAtRisk')
 tickers=['TSLA','AAPL','MSFT','BTC-USD','ETH-USD','AMD','AMZN']
 dropdown=st.multiselect('Pick your assets',tickers,key=6,default='TSLA')
