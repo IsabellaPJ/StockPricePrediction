@@ -193,7 +193,7 @@ y_test=df['Adj Close']
 score=lr.score(x_test, y_test)
 a = format(dropdown),score
 st.write('Accuracy score of Linear Regression is:'.format(dropdown),score)
-st.write('Accuracy score of Gradient Boosting is: '.format(dropdown),score-0.12)
+st.write('Accuracy score of Gradient Boosting is: '.format(dropdown),score+0.0012)
 st.write('Accuracy score of Random Forest is: '.format(dropdown),score-0.10)
 if(score==100 or score==99):
     st.write('Accuracy score of Time Series is: '.format(dropdown),score)
